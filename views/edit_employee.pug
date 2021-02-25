@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1 #{title}
+    form(method='POST', action='/employee/edit/'+employee._id)
+        #form-group
+            label Name:
+            input.form-control(name='name', type='text', value=employee.name)
+        #form-group
+            label Cell:
+            input.form-control(name='cell', type='text', value=employee.cell)
+        #form-group
+            label Address:
+            textarea.form-control(name='address')= employee.address
+        br
+        input.btn.btn-primary(type='submit',value='Submit')

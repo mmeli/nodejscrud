@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1 #{title}   
+    ul.list-group
+        each employee, i in employees
+            li.list-group-item
+                a(href='/employee/'+employee._id)=employee.name

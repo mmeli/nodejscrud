@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    h1 #{title}
+    form(method='POST', action='/employees/add-employee')
+        #form-group
+            label Name:
+            input.form-control(name='name', type='text')
+        #form-group
+            label Cell:
+            input.form-control(name='cell', type='text')
+        #form-group
+            label Address:
+            textarea.form-control(name='address')
+        br
+        input.btn.btn-primary(type='submit',value='Submit')
+        br
+        a.btn.btn-default(href='/') < Back

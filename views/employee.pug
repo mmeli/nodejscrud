@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    br
+    h1= employee.name
+    h5 Contact cell : #{employee.cell}
+    p Address: #{employee.address}
+    hr
+    a.btn.btn-default(href='/') Back
+    a.btn.btn-default(href='/employee/edit/'+employee._id) Edit
+    a.btn.btn-danger.delete-employee(href='#',data-id=employee._id) Delete

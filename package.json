@@ -1,0 +1,22 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "This is the CRUD app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Mmeli Mbatha",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.1",
+    "express-sessions": "^1.0.6",
+    "express-validator": "^6.7.0",
+    "mongoose": "^5.10.15",
+    "pug": "^3.0.0"
+  }
+}
